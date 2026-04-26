@@ -1,4 +1,4 @@
-// Counter animation
+// Counter animation (for Home stats)
 const counters = document.querySelectorAll(".stat-number");
 
 counters.forEach(counter => {
@@ -37,11 +37,3 @@ function handleReveal() {
 
 window.addEventListener("scroll", handleReveal);
 window.addEventListener("load", handleReveal);
-
-// Active nav link on click
-document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", function () {
-        document.querySelectorAll(".nav-links a").forEach(a => a.classList.remove("active"));
-        this.classList.add("active");
-    });
-});
