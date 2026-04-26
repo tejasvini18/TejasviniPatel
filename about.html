@@ -1,49 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Tejasvini Patel</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="navbar">
-    <div class="nav-left">
-        <img src="logo.png" class="nav-logo">
-        <span class="brand">Tejasvini <strong>Patel</strong></span>
+<header class="topbar">
+    <div class="topbar-left">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="brand-block">
+            <span class="brand-name">Tejasvini Patel</span>
+            <span class="brand-role">Senior QA Engineer & SDET</span>
+        </div>
     </div>
-    <nav class="nav-links">
+
+    <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
         <a href="experience.html">Experience</a>
         <a href="education.html">Education</a>
         <a href="skills.html">Skills</a>
         <a href="certifications.html">Certifications</a>
-        <a href="projects.html">Case Studies</a>
+        <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
-<main class="page">
-    <section class="section">
-        <div class="card">
-            <h1>About Me</h1>
+<main>
+
+    <section id="about" class="section">
+        <div class="section-header reveal">
+            <h2>About Me</h2>
+            <p>A quality engineering specialist with deep expertise in automation, security, and enterprise‑grade testing.</p>
+        </div>
+
+        <div class="card reveal">
             <p>
-                I am a Senior QA Engineer & SDET with deep expertise in automation, manual testing,
-                performance testing, and security testing. I build enterprise-grade automation frameworks
-                using Playwright, Selenium, Cypress, and TestNG.
+                I am a Senior QA Engineer & SDET with extensive experience in Manual Testing, Automation Engineering,
+                API Testing, Performance Testing, and Security Testing, delivering high‑quality software across
+                e‑commerce, financial, government, and security‑critical platforms.
             </p>
+
             <p>
-                My focus is on preventing defects early, improving release confidence, and ensuring
-                flawless user experiences across web, mobile, and API layers.
+                I specialise in designing and developing enterprise‑grade automation frameworks using
+                <strong>Playwright, Selenium, Cypress, TestNG, Cucumber/BDD, and Page Object Model (POM)</strong>.
+                These frameworks have improved test coverage, reduced regression cycles, and enabled teams to
+                release faster with higher confidence.
+            </p>
+
+            <p>
+                Beyond automation, I bring strong expertise in <strong>API testing, performance engineering,
+                and security testing</strong>. I have executed JMeter load tests simulating real‑world peak traffic,
+                uncovering backend bottlenecks and improving page load speeds by up to 25%. I have also performed
+                penetration testing using OWASP ZAP, Burp Suite, Nmap, and OWASP Top 10 methodologies, identifying
+                vulnerabilities such as SQL Injection (SQLi), XSS, DNS spoofing, and data exposure before production.
+            </p>
+
+            <p>
+                I don’t just test software — <strong>I engineer reliability, prevent defects, and protect
+                business‑critical workflows.</strong> By embedding quality early in the SDLC and STLC and working
+                closely with developers, BAs, and product owners, I consistently reduce defect leakage and improve
+                release confidence.
+            </p>
+
+            <div class="about-highlights">
+                <p><strong>✔ Automation Framework Development:</strong> Playwright, Selenium, Cypress, TestNG, POM</p>
+                <p><strong>✔ API & Microservices Testing:</strong> Postman, RestAssured, REST, JSON, Swagger</p>
+                <p><strong>✔ Performance Engineering:</strong> JMeter, LoadRunner, bottleneck analysis</p>
+                <p><strong>✔ Security Testing:</strong> OWASP Top 10, Burp Suite, OWASP ZAP, Nmap</p>
+                <p><strong>✔ CI/CD & DevOps:</strong> Jenkins, Git, GitHub, Azure DevOps, Maven</p>
+                <p><strong>✔ Agile Delivery:</strong> JIRA, Confluence, Sprint planning, standups, retrospectives</p>
+                <p><strong>✔ Documentation & Leadership:</strong> Test strategy, test plans, mentoring, UAT</p>
+            </div>
+
+            <p>
+                With a strong technical foundation, hands‑on experience across multiple domains, and a focus on
+                precision and structure, I ensure that quality is not just tested at the end — it is engineered
+                into every stage of the product lifecycle.
             </p>
         </div>
     </section>
+
 </main>
 
-<footer class="footer">© 2026 · Tejasvini Patel</footer>
+<footer class="footer">
+    © 2026 · Tejasvini Patel · Senior QA Engineer & SDET
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
