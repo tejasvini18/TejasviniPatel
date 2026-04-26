@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Tejasvini Patel · Senior QA Engineer & SDET</title>
+    <title>Tejasvini Patel | Senior QA Engineer & SDET</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Senior QA Engineer & SDET specialising in Automation, Playwright, Selenium, Cypress, API, Performance and Security Testing.">
     <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="navbar">
     <div class="nav-left">
-        <img src="logo.png" class="nav-logo" alt="Logo">
-        <span class="brand">Tejasvini <strong>Patel</strong></span>
+        <img src="logo.png" alt="Logo" class="nav-logo">
+        <span class="brand">Tejasvini <span class="brand-accent">Patel</span></span>
     </div>
-
     <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="education.html">Education</a>
-        <a href="skills.html">Skills</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="projects.html">Case Studies</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Case Studies</a>
+        <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<main class="page">
+<main>
 
-    <section class="hero grid-2">
-        <div class="card hero-text">
-            <h1>Senior QA Engineer & SDET</h1>
+    <!-- HOME / HERO -->
+    <section id="home" class="section hero">
+        <div class="hero-left card reveal">
+            <p class="eyebrow">Senior QA Engineer & SDET</p>
+            <h1>Precision Quality Engineering<br><span class="highlight">for High‑stakes Software</span></h1>
             <p class="hero-subtitle">
                 Automation · Playwright · Selenium · Cypress · API · Performance · Security · CI/CD
             </p>
@@ -54,14 +55,188 @@
             </div>
 
             <div class="hero-actions">
-                <a href="contact.html" class="btn-primary">Hire Me</a>
-                <a href="projects.html" class="btn-secondary">View Case Studies</a>
+                <a href="#contact" class="btn-primary">Hire Me</a>
+                <a href="#projects" class="btn-secondary">View Case Studies</a>
             </div>
         </div>
 
-        <div class="card hero-photo">
-            <img src="profile.jpg" alt="Profile Photo">
-            <div class="badge">UK‑Based · Open to Work</div>
+        <div class="hero-right card reveal">
+            <div class="hero-photo">
+                <img src="profile.jpg" alt="Tejasvini Patel">
+            </div>
+            <div class="hero-badge">
+                <span>UK‑Based · Open to Work</span>
+            </div>
+            <div class="hero-tagline">
+                Precision · Security · Reliability
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="section-header reveal">
+            <h2>About</h2>
+            <p>Who I am as a quality engineering professional.</p>
+        </div>
+        <div class="card reveal">
+            <p>
+                I am a Senior QA Engineer & SDET with proven expertise in both manual and automation testing.
+                I design and implement robust automation frameworks using Playwright, Selenium, Cypress, and TestNG,
+                covering web, mobile, and API layers end‑to‑end.
+            </p>
+            <p>
+                My focus is on preventing defects early, improving release confidence, and ensuring flawless user
+                experiences across complex, business‑critical systems. I collaborate closely with developers, product
+                owners, and stakeholders to embed quality into every stage of the SDLC.
+            </p>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="section-header reveal">
+            <h2>Experience</h2>
+            <p>Hands‑on delivery across QA, automation, performance, and security.</p>
+        </div>
+        <div class="timeline">
+
+            <div class="timeline-item card reveal">
+                <h3>Senior QA Test Engineer & SDET · Elegant Systems · 2025–Present · Swindon, UK</h3>
+                <p>Built a modular Playwright + TypeScript automation framework, increasing test coverage by 65%.</p>
+                <p>Performed penetration testing on payment gateways and JMeter performance testing for peak traffic.</p>
+            </div>
+
+            <div class="timeline-item card reveal">
+                <h3>Freelance QA Automation Engineer · 2024–2025 · UK</h3>
+                <p>Developed scalable Playwright automation for e‑commerce flows and API testing using Postman.</p>
+            </div>
+
+            <div class="timeline-item card reveal">
+                <h3>Software Test Engineer & Penetration Tester · Evision IT · 2022–2024</h3>
+                <p>Executed vulnerability assessments, threat modelling, and Python‑based security automation.</p>
+            </div>
+
+            <div class="timeline-item card reveal">
+                <h3>Software QA Engineer & Security Analyst · CSITPARK · 2022</h3>
+                <p>Managed full‑cycle QA for a high‑traffic shopping platform using Selenium and BDD.</p>
+            </div>
+
+            <div class="timeline-item card reveal">
+                <h3>Software QA Tester · BJ Medical Billing · 2020–2022</h3>
+                <p>Ensured 100% accuracy for HMRC‑integrated financial modules and compliance workflows.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+        <div class="section-header reveal">
+            <h2>Education</h2>
+            <p>Formal training and academic foundation.</p>
+        </div>
+        <div class="card reveal">
+            <ul class="list">
+                <li><strong>Professional Certification, Automation Test Engineer</strong> · Academy For Health & Fitness</li>
+                <li><strong>Advanced Diploma, Software Testing</strong> · Studyhub UK</li>
+                <li><strong>MSc Information Technology</strong> · Kadi Sarva Vishwavidyalaya (KSV)</li>
+                <li><strong>Bachelor of Computer Applications</strong> · KSV</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="section-header reveal">
+            <h2>Skills</h2>
+            <p>Core technical and testing capabilities.</p>
+        </div>
+        <div class="card reveal">
+            <div class="pill-grid">
+                <span class="pill">Playwright</span>
+                <span class="pill">Selenium</span>
+                <span class="pill">Cypress</span>
+                <span class="pill">TestNG</span>
+                <span class="pill">Cucumber / BDD</span>
+                <span class="pill">API Testing · Postman</span>
+                <span class="pill">RestAssured</span>
+                <span class="pill">JMeter · LoadRunner</span>
+                <span class="pill">Burp Suite · OWASP ZAP</span>
+                <span class="pill">Nmap · OWASP Top 10</span>
+                <span class="pill">SQL</span>
+                <span class="pill">Git · GitHub · Azure DevOps</span>
+                <span class="pill">JIRA · Confluence</span>
+                <span class="pill">Agile / Scrum</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+        <div class="section-header reveal">
+            <h2>Certifications</h2>
+            <p>Formal credentials and continuous learning.</p>
+        </div>
+        <div class="card reveal">
+            <ul class="list">
+                <li>Agile Scrum Master Certification</li>
+                <li>Building a TodoMVC Application in Vue, React and Angular</li>
+                <li>Azure Administrator Essentials</li>
+                <li>Cloud Computing / CompTIA Cloud (CV0‑002)</li>
+                <li>Git and GitHub Training</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS / CASE STUDIES -->
+    <section id="projects" class="section">
+        <div class="section-header reveal">
+            <h2>Case Studies</h2>
+            <p>Selected examples of QA, automation, and security work.</p>
+        </div>
+        <div class="projects-grid">
+
+            <article class="project card reveal">
+                <h3>Enterprise E‑Commerce Automation</h3>
+                <p>
+                    Designed a Playwright + TypeScript framework for a restaurant e‑commerce platform,
+                    covering login, add‑to‑cart, checkout, and payment flows with cross‑browser coverage.
+                </p>
+            </article>
+
+            <article class="project card reveal">
+                <h3>Security Testing for Network Tools</h3>
+                <p>
+                    Performed OWASP Top 10‑based penetration testing on DNS and Whois tools using Burp Suite,
+                    OWASP ZAP, and Nmap, identifying critical vulnerabilities before production.
+                </p>
+            </article>
+
+            <article class="project card reveal">
+                <h3>Performance & Load Testing</h3>
+                <p>
+                    Built JMeter scenarios simulating peak dinner‑hour traffic, uncovering backend bottlenecks
+                    and improving page load times by 25%.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="section-header reveal">
+            <h2>Contact</h2>
+            <p>Let’s talk about roles, projects, or collaboration.</p>
+        </div>
+        <div class="card reveal contact-card">
+            <ul class="list">
+                <li><strong>Email:</strong> tejasvini18p@gmail.com</li>
+                <li><strong>Phone:</strong> +44 7909 464379</li>
+                <li><strong>LinkedIn:</strong> linkedin.com/in/tejasvini-patel-qa</li>
+                <li><strong>Portfolio:</strong> tejasvinipatel.com</li>
+            </ul>
         </div>
     </section>
 
