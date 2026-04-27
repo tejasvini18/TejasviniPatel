@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --bg: #02040b;
-    --bg-soft: #050816;
-    --panel: #050816;
-    --panel-soft: #070b1f;
-    --border-subtle: #111827;
-    --border-strong: #1f2937;
+    --bg: #020617;
+    --bg-soft: #020617;
+    --panel: rgba(15, 23, 42, 0.92);
+    --panel-strong: rgba(15, 23, 42, 0.98);
+    --border-subtle: rgba(31, 41, 55, 0.7);
+    --border-strong: rgba(55, 65, 81, 0.9);
     --accent: #38bdf8;
     --accent-soft: #0ea5e9;
     --accent-glow: rgba(56, 189, 248, 0.35);
     --text-main: #e5e7eb;
     --text-muted: #9ca3af;
     --text-soft: #6b7280;
-    --radius-lg: 22px;
-    --radius-md: 16px;
+    --radius-xl: 26px;
+    --radius-lg: 20px;
+    --radius-md: 14px;
     --radius-pill: 999px;
 }
 
@@ -26,7 +27,9 @@
 
 body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: radial-gradient(circle at top, #020617 0, #020617 40%, #020617 100%);
+    background:
+        radial-gradient(circle at top, #020617 0, #020617 40%, #020617 100%),
+        linear-gradient(135deg, #020617, #020617);
     color: var(--text-main);
     scroll-behavior: smooth;
 }
@@ -41,11 +44,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(22px);
-    background: linear-gradient(to right, rgba(2, 6, 23, 0.96), rgba(2, 6, 23, 0.9));
-    border-bottom: 1px solid rgba(31, 41, 55, 0.8);
+    backdrop-filter: blur(26px);
+    background: linear-gradient(
+        to right,
+        rgba(2, 6, 23, 0.96),
+        rgba(2, 6, 23, 0.9)
+    );
+    border-bottom: 1px solid rgba(31, 41, 55, 0.9);
     z-index: 1000;
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.95);
 }
 
 .topbar-left {
@@ -60,6 +67,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-soft);
+    box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.9);
 }
 
 .brand-block {
@@ -144,9 +152,9 @@ body {
 /* CARDS / PANELS */
 
 .card {
-    background: radial-gradient(circle at top left, #020617 0, #020617 40%, #020617 100%);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-strong);
+    background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.98) 0, rgba(15, 23, 42, 0.96) 40%, rgba(15, 23, 42, 0.98) 100%);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-subtle);
     padding: 26px 28px;
     position: relative;
     overflow: hidden;
@@ -155,14 +163,16 @@ body {
 .card::before {
     content: "";
     position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), transparent 55%);
+    inset: -40%;
+    background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(15, 118, 110, 0.12), transparent 55%);
     opacity: 0.9;
     pointer-events: none;
 }
 
 .card.elevate {
-    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.95);
+    box-shadow: 0 26px 70px rgba(15, 23, 42, 0.98);
 }
 
 /* HERO (HOME) */
@@ -259,7 +269,7 @@ body {
 .btn-outline {
     border: 1px solid var(--border-strong);
     color: #e5e7eb;
-    background: rgba(15, 23, 42, 0.7);
+    background: rgba(15, 23, 42, 0.9);
 }
 
 .btn-primary:hover {
@@ -268,7 +278,7 @@ body {
 }
 
 .btn-outline:hover {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(15, 23, 42, 1);
 }
 
 /* HOME BUTTON GROUP */
@@ -299,9 +309,11 @@ body {
 
 .hero-glow {
     position: absolute;
-    inset: -18px;
-    background: radial-gradient(circle, rgba(56, 189, 248, 0.25), transparent 60%);
-    filter: blur(10px);
+    inset: -22px;
+    background:
+        radial-gradient(circle, rgba(56, 189, 248, 0.3), transparent 60%),
+        radial-gradient(circle at bottom, rgba(15, 118, 110, 0.25), transparent 60%);
+    filter: blur(12px);
     z-index: 0;
 }
 
@@ -312,7 +324,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent-soft);
-    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.95);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.98);
     z-index: 1;
 }
 
@@ -333,7 +345,7 @@ body {
     border: 1px solid var(--border-strong);
     font-size: 11px;
     color: var(--text-muted);
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(15, 23, 42, 0.98);
 }
 
 /* GENERIC LISTS */
@@ -384,7 +396,7 @@ body {
     border-radius: var(--radius-pill);
     border: 1px solid var(--border-strong);
     color: var(--text-muted);
-    background: rgba(15, 23, 42, 0.9);
+    background: rgba(15, 23, 42, 0.98);
 }
 
 /* PROJECT GRID */
@@ -426,8 +438,8 @@ body {
 }
 
 .edu-badge-card {
-    background: rgba(15, 23, 42, 0.95);
-    border-radius: var(--radius-md);
+    background: rgba(15, 23, 42, 0.98);
+    border-radius: var(--radius-lg);
     border: 1px solid var(--border-strong);
     padding: 18px 20px;
 }
