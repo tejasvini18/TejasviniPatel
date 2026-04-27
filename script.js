@@ -1,4 +1,4 @@
-// PREMIUM SCROLL REVEAL
+// SCROLL REVEAL ANIMATION
 const revealElements = document.querySelectorAll(".reveal");
 
 function handleReveal() {
@@ -17,13 +17,14 @@ function handleReveal() {
 window.addEventListener("scroll", handleReveal);
 window.addEventListener("load", handleReveal);
 
-// Stats counter on home
+// STATS COUNTER (Home Page)
 const statNumbers = document.querySelectorAll(".stat-number");
 
 function animateStats() {
   statNumbers.forEach((el) => {
     const target = parseInt(el.getAttribute("data-target"), 10);
     if (!target) return;
+
     let current = 0;
     const increment = Math.max(1, Math.floor(target / 60));
 
@@ -36,6 +37,7 @@ function animateStats() {
         requestAnimationFrame(update);
       }
     };
+
     update();
   });
 }
