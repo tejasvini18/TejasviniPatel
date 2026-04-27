@@ -1,39 +1,43 @@
-// Counter animation
-const counters = document.querySelectorAll(".stat-number");
-
-counters.forEach(counter => {
-    const target = +counter.getAttribute("data-target");
-    if (!target) return;
-
-    let current = 0;
-    const increment = Math.max(1, Math.floor(target / 80));
-
-    const update = () => {
-        current += increment;
-        if (current >= target) {
-            counter.textContent = target;
-        } else {
-            counter.textContent = current;
-            requestAnimationFrame(update);
-        }
-    };
-
-    update();
-});
-
-// Scroll reveal
+// PREMIUM SCROLL REVEAL
 const revealElements = document.querySelectorAll(".reveal");
 
 function handleReveal() {
-    const triggerBottom = window.innerHeight * 0.85;
+  const triggerBottom = window.innerHeight * 0.85;
 
-    revealElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < triggerBottom) {
-            el.classList.add("show");
-        }
-    });
+  revealElements.forEach((el, index) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < triggerBottom) {
+      setTimeout(() => {
+        el.classList.add("show");
+      }, index * 120);
+    }
+  });
 }
 
 window.addEventListener("scroll", handleReveal);
 window.addEventListener("load", handleReveal);
+
+// Stats counter on home
+const statNumbers = document.querySelectorAll(".stat-number");
+
+function animateStats() {
+  statNumbers.forEach((el) => {
+    const target = parseInt(el.getAttribute("data-target"), 10);
+    if (!target) return;
+    let current = 0;
+    const increment = Math.max(1, Math.floor(target / 60));
+
+    const update = () => {
+      current += increment;
+      if (current >= target) {
+        el.textContent = target;
+      } else {
+        el.textContent = current;
+        requestAnimationFrame(update);
+      }
+    };
+    update();
+  });
+}
+
+window.addEventListener("load", animateStats);
