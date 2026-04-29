@@ -1,4 +1,3 @@
-// Scroll Reveal Animation
 document.addEventListener("DOMContentLoaded", () => {
   const revealElements = document.querySelectorAll(".reveal");
 
