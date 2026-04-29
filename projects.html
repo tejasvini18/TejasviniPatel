@@ -3,45 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Projects | Tejasvini Patel</title>
-  <meta name="description" content="Explore real-world QA and automation projects by Tejasvini Patel — including automation frameworks, performance testing, API testing, and security testing case studies.">
-
-  <link rel="canonical" href="https://www.tejasvinipatel.com/projects.html">
-  <link rel="icon" type="image/png" href="logo.png">
-
-  <meta property="og:title" content="Projects | Tejasvini Patel">
-  <meta property="og:image" content="https://www.tejasvinipatel.com/logo.png">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-01ZNHF2H3V"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-01ZNHF2H3V');
-  </script>
-
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
 </head>
 
 <body>
-
 <header class="topbar glass">
-  <div class="topbar-left">
-    <img src="logo.png" class="logo">
-    <div class="brand-block">
-      <span class="brand-name">Tejasvini Patel</span>
-      <span class="brand-role">Senior QA Engineer & SDET</span>
+  <div class="brand">
+    <img src="logo.png" class="logo" alt="Logo">
+    <div>
+      <h2 class="brand-name">Tejasvini Patel</h2>
+      <p class="brand-role">Senior QA Engineer & SDET</p>
     </div>
   </div>
-
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="experience.html">Experience</a>
     <a href="education.html">Education</a>
     <a href="skills.html">Skills</a>
-    <a href="projects.html" class="active">Projects</a>
+    <a class="active" href="projects.html">Projects</a>
     <a href="certifications.html">Certificates</a>
     <a href="contact.html">Contact</a>
   </nav>
@@ -49,114 +31,85 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="section hero full-height reveal">
-    <div class="hero-left">
-      <span class="eyebrow glass-chip">My Work</span>
-      <h1>Real‑World <span class="accent">QA & Automation</span> Projects</h1>
-      <p class="hero-subtitle">
-        A collection of automation frameworks, performance testing initiatives, API testing solutions,
-        and security testing case studies — built to ensure reliability, scalability, and security.
-      </p>
-      <a href="contact.html" class="btn-primary">Work With Me</a>
-    </div>
-
-    <div class="hero-right">
-      <div class="hero-orbit">
-        <div class="hero-glow"></div>
-        <img src="profile.png" class="profile-photo">
-      </div>
-      <div class="hero-tags glass">
-        <span>Automation · API · Performance</span>
-        <span>Security · CI/CD</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECT GRID -->
-  <section class="section reveal">
-    <h2 class="section-title">Highlighted Projects</h2>
-    <p class="section-text">
-      Each project demonstrates my ability to design, execute, and deliver high‑impact QA solutions.
+<section class="section hero full-height reveal">
+  <div class="hero-left">
+    <span class="glass-chip">My Work</span>
+    <h1>Real‑World <span class="accent">QA & Automation</span> Projects</h1>
+    <p class="hero-subtitle">
+      A collection of automation frameworks, performance testing initiatives, API testing solutions,
+      and security testing case studies — built to ensure reliability, scalability, and security.
     </p>
-
-    <div class="projects-row">
-
-      <div class="project-card glass">
-        <h3>Playwright Automation Framework</h3>
-        <p>
-          Built a scalable Playwright framework covering UI + API automation with reporting,
-          reusable utilities, and CI/CD integration.
-        </p>
-        <ul class="timeline-points">
-          <li>Hybrid POM architecture</li>
-          <li>Custom reporting module</li>
-          <li>API + UI combined flows</li>
-          <li>Integrated with Jenkins</li>
-        </ul>
-      </div>
-
-      <div class="project-card glass">
-        <h3>Performance Testing Suite</h3>
-        <p>
-          Designed JMeter load, stress, and endurance tests for a high‑traffic enterprise application.
-        </p>
-        <ul class="timeline-points">
-          <li>Load testing up to 10k users</li>
-          <li>Response time analysis</li>
-          <li>Bottleneck identification</li>
-          <li>Performance dashboards</li>
-        </ul>
-      </div>
-
-      <div class="project-card glass">
-        <h3>Security Testing Initiative</h3>
-        <p>
-          Conducted penetration testing using Burp Suite, OWASP ZAP, and manual techniques.
-        </p>
-        <ul class="timeline-points">
-          <li>SQL Injection detection</li>
-          <li>XSS & CSRF testing</li>
-          <li>Authentication bypass checks</li>
-          <li>OWASP Top 10 coverage</li>
-        </ul>
-      </div>
-
-      <div class="project-card glass">
-        <h3>API Automation Framework</h3>
-        <p>
-          Built a RestAssured‑based API automation suite with schema validation and CI integration.
-        </p>
-        <ul class="timeline-points">
-          <li>JSON schema validation</li>
-          <li>Token‑based authentication</li>
-          <li>Reusable API utilities</li>
-          <li>Integrated with GitHub Actions</li>
-        </ul>
-      </div>
-
+  </div>
+  <div class="hero-right">
+    <div class="orbit">
+      <div class="glow"></div>
+      <img src="profile.png" class="profile-photo" alt="Profile">
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CTA -->
-  <section class="section contact-cta reveal">
-    <div class="glass contact-cta-inner">
-      <h2>Want to See More?</h2>
+<section class="section reveal">
+  <h2 class="section-title">Highlighted Projects</h2>
+  <p class="section-text">
+    Each project demonstrates my ability to design, execute, and deliver high‑impact QA solutions.
+  </p>
+  <div class="grid">
+    <div class="card glass">
+      <h3>Playwright Automation Framework</h3>
       <p>
-        I can share private project demos, automation samples, and performance dashboards upon request.
+        Built a scalable Playwright framework covering UI + API automation with reporting,
+        reusable utilities, and CI/CD integration.
       </p>
-      <div class="cta-buttons">
-        <a href="contact.html" class="btn-primary">Contact Me</a>
-        <a href="skills.html" class="btn-ghost">View Skills</a>
-      </div>
+      <ul class="timeline-points">
+        <li>Hybrid POM architecture</li>
+        <li>Custom reporting module</li>
+        <li>API + UI combined flows</li>
+        <li>Integrated with Jenkins</li>
+      </ul>
     </div>
-  </section>
+    <div class="card glass">
+      <h3>Performance Testing Suite</h3>
+      <p>
+        Designed JMeter load, stress, and endurance tests for a high‑traffic enterprise application.
+      </p>
+      <ul class="timeline-points">
+        <li>Load testing up to 10k users</li>
+        <li>Response time analysis</li>
+        <li>Bottleneck identification</li>
+        <li>Performance dashboards</li>
+      </ul>
+    </div>
+    <div class="card glass">
+      <h3>Security Testing Initiative</h3>
+      <p>
+        Conducted penetration testing using Burp Suite, OWASP ZAP, and manual techniques.
+      </p>
+      <ul class="timeline-points">
+        <li>SQL Injection detection</li>
+        <li>XSS & CSRF testing</li>
+        <li>Authentication bypass checks</li>
+        <li>OWASP Top 10 coverage</li>
+      </ul>
+    </div>
+    <div class="card glass">
+      <h3>API Automation Framework</h3>
+      <p>
+        Built a RestAssured‑based API automation suite with schema validation and CI integration.
+      </p>
+      <ul class="timeline-points">
+        <li>JSON schema validation</li>
+        <li>Token‑based authentication</li>
+        <li>Reusable API utilities</li>
+        <li>Integrated with GitHub Actions</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 </main>
 
 <footer class="footer">
-  <div>© 2026 · www.tejasvinipatel.com · All Rights Reserved.</div>
-  <div>Senior QA Engineer & SDET · Swindon, UK · Open to UK‑wide · Hybrid / Remote</div>
+  <p>© 2026 · www.tejasvinipatel.com · All Rights Reserved.</p>
 </footer>
 
 <script src="script.js"></script>
