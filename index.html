@@ -7,21 +7,33 @@
   <meta name="description" content="Senior QA Engineer & SDET – Precision, reliability, and end-to-end quality engineering by Tejasvini Patel." />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Basic structured data for name search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tejasvini Patel",
+    "url": "https://www.tejasvinipatel.com",
+    "jobTitle": "Senior QA Engineer & SDET",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Swindon",
+      "addressCountry": "UK"
+    }
+  }
+  </script>
 </head>
-
 <body class="theme-dark">
-
-  <!-- NAVBAR -->
   <header class="site-header glass-blur">
     <div class="nav-inner">
       <a href="index.html" class="brand">
-        <img src="logo.png" class="brand-logo" />
+        <img src="logo.png" alt="TP Logo" class="brand-logo" />
         <div class="brand-text">
           <span class="brand-name">Tejasvini Patel</span>
           <span class="brand-url">www.tejasvinipatel.com</span>
         </div>
       </a>
-
       <nav class="nav-links" id="navLinks">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
@@ -32,70 +44,209 @@
         <a href="certifications.html">Certificates</a>
         <a href="contact.html">Contact</a>
       </nav>
-
-      <button class="nav-toggle" id="navToggle">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- HERO -->
   <main>
+    <!-- HERO -->
     <section class="section hero section-observe">
       <div class="hero-grid">
-
         <div class="hero-main">
           <p class="eyebrow">SENIOR QA ENGINEER & SDET</p>
-
-          <h1>Precision. Reliability.<br>Experience you can trust.</h1>
-
+          <h1>Precision. Reliability. Experience you can trust.</h1>
           <p class="hero-sub">
-            I design and execute end‑to‑end quality strategies—manual, automation, security, and performance—
+            I design and execute end-to-end quality strategies—manual, automation, security, and performance—
             so products feel effortless, stable, and premium.
           </p>
-
           <div class="hero-actions">
             <a href="projects.html" class="btn primary btn-glow">View Projects</a>
             <a href="contact.html" class="btn ghost">Let’s Work Together</a>
           </div>
-
-          <!-- UPDATED BUTTONS -->
           <div class="hero-meta">
-            <a class="btn secondary btn-glow">Based in Swindon, UK</a>
-            <a class="btn secondary btn-glow">Open to UK‑wide roles</a>
+            <span>Based in Swindon, UK</span>
+            <span>Open to UK-wide roles</span>
           </div>
         </div>
-
         <aside class="hero-side glass-card">
-          <img src="profile.png" class="profile-photo" />
+          <img src="profile.png" alt="Tejasvini Patel" class="profile-photo" />
           <h2 class="card-title">Tejasvini Patel</h2>
           <p class="card-sub">QA Engineer · SDET · Security-aware Tester</p>
-
           <div class="card-grid">
-            <div><span class="label">Experience</span><span class="value">5+ years</span></div>
-            <div><span class="label">Automation</span><span class="value">Playwright · Selenium · Cypress</span></div>
-            <div><span class="label">Security</span><span class="value">OWASP · Burp Suite · ZAP</span></div>
+            <div>
+              <span class="label">Experience</span>
+              <span class="value">5+ years</span>
+            </div>
+            <div>
+              <span class="label">Automation</span>
+              <span class="value">Playwright · Selenium · Cypress</span>
+            </div>
+            <div>
+              <span class="label">Security</span>
+              <span class="value">OWASP · Burp Suite · ZAP</span>
+            </div>
           </div>
-
           <a href="experience.html" class="card-link">Explore full experience timeline →</a>
         </aside>
-
       </div>
-
       <div class="scroll-indicator">Scroll to explore</div>
     </section>
 
-    <!-- KEEP ALL OTHER SECTIONS EXACTLY AS THEY ARE -->
+    <!-- EDUCATION OVERVIEW -->
+    <section class="section section-observe">
+      <div class="section-header">
+        <h2>Education at a glance</h2>
+        <p>Structured academic foundation in IT, backed by advanced testing and automation training.</p>
+      </div>
+      <div class="grid-2">
+        <div class="glass-card">
+          <h3>Master’s in Information Technology</h3>
+          <p class="muted">KSV University · 2021–2023</p>
+          <p>Focused on software engineering, distributed systems, and secure application design.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Bachelor’s in Computer Applications</h3>
+          <p class="muted">KSV University · 2018–2021</p>
+          <p>Core programming, databases, and fundamentals that shaped my engineering mindset.</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="education.html" class="btn secondary btn-glow">View full education journey</a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE OVERVIEW -->
+    <section class="section section-observe">
+      <div class="section-header">
+        <h2>Experience snapshot</h2>
+        <p>From medical billing systems to enterprise platforms—each role sharpened my QA discipline.</p>
+      </div>
+      <div class="timeline-mini">
+        <div class="timeline-item glass-card">
+          <h3>Senior QA Engineer & SDET</h3>
+          <p class="muted">Elegant Systems Ltd · 2025–Present · Swindon, UK</p>
+          <p>Leading automation-first quality strategies across web platforms and services.</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <h3>Freelance IT & QA Automation</h3>
+          <p class="muted">2024–2025 · UK</p>
+          <p>Delivered automation frameworks, test strategies, and training for diverse clients.</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <h3>Software Test Engineer & Penetration Tester</h3>
+          <p class="muted">Evision IT Solutions · 2022–2024 · Gandhinagar</p>
+          <p>Combined functional testing with security assessments to harden applications.</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="experience.html" class="btn secondary">View full experience timeline</a>
+      </div>
+    </section>
+
+    <!-- SKILLS OVERVIEW -->
+    <section class="section section-observe">
+      <div class="section-header">
+        <h2>Skills at a glance</h2>
+        <p>Automation, security, and delivery—aligned to modern engineering teams.</p>
+      </div>
+      <div class="grid-3">
+        <div class="glass-card">
+          <h3>Automation</h3>
+          <p>Playwright · Cypress · Selenium · TestNG · Cucumber/BDD · POM · Hybrid frameworks & CI integration.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Quality & Security</h3>
+          <p>API testing, performance testing, OWASP Top 10, Burp Suite, ZAP, Nmap, secure SDLC practices.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Delivery & Collaboration</h3>
+          <p>JIRA, Confluence, Agile ceremonies, CI/CD with Jenkins, Git, GitHub, Azure DevOps.</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="skills.html" class="btn secondary btn-glow">View full skill map</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS OVERVIEW -->
+    <section class="section section-observe">
+      <div class="section-header">
+        <h2>Project impact</h2>
+        <p>Real systems, real users, measurable quality improvements.</p>
+      </div>
+      <div class="grid-2">
+        <div class="glass-card">
+          <h3>Billing platform stability</h3>
+          <p>Designed regression suites and automation coverage for critical billing flows, reducing production defects and stabilizing releases.</p>
+          <a href="projects.html" class="card-link">See detailed project stories →</a>
+        </div>
+        <div class="glass-card">
+          <h3>Security-aware QA pipelines</h3>
+          <p>Integrated security checks into CI, catching vulnerabilities earlier and aligning QA with DevSecOps practices.</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="projects.html" class="btn secondary">Explore all projects</a>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS OVERVIEW -->
+    <section class="section section-observe">
+      <div class="section-header">
+        <h2>Certifications & continuous learning</h2>
+        <p>Deep, multi-stack learning across QA, security, cloud, and development.</p>
+      </div>
+      <div class="grid-3">
+        <div class="glass-card">
+          <h3>QA & Testing</h3>
+          <p>CAST, Automation Test Engineer (QLS), Agile Scrum Master, Selenium, and more.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Cloud & Security</h3>
+          <p>AWS, Azure, CompTIA Security+, CySA+, PenTest+, Cloud+, and secure programming.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Development & Data</h3>
+          <p>PHP, .NET, Node, Spring, SQL, NoSQL, Big Data, and advanced web development.</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="certifications.html" class="btn secondary btn-glow">View all certifications</a>
+      </div>
+    </section>
+
+    <!-- CONTACT OVERVIEW -->
+    <section class="section section-observe">
+      <div class="section-header">
+        <h2>Let’s work together</h2>
+        <p>Open to roles where quality is non‑negotiable.</p>
+      </div>
+      <div class="grid-2">
+        <div class="glass-card">
+          <h3>What I bring</h3>
+          <ul class="bullet-list">
+            <li>End-to-end QA ownership across manual, automation, and security.</li>
+            <li>Calm, structured delivery under pressure.</li>
+            <li>Clear communication with engineers, product, and leadership.</li>
+          </ul>
+        </div>
+        <div class="glass-card">
+          <h3>Start the conversation</h3>
+          <p>Use the contact page to send a message directly to my email.</p>
+          <a href="contact.html" class="btn primary btn-glow">Go to contact page</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer glass-blur">
     <div class="footer-inner">
       <div class="footer-left">
         <div class="footer-name">Tejasvini Patel</div>
         <div class="footer-tagline">Quality without compromise.</div>
       </div>
-
       <div class="footer-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -106,9 +257,8 @@
         <a href="certifications.html">Certificates</a>
         <a href="contact.html">Contact</a>
       </div>
-
       <div class="footer-right">
-        <div>© <span id="year"></span> www.tejasvinipatel.com</div>
+        <div>© 2026 www.tejasvinipatel.com</div>
         <div class="footer-note">Built with precision, tested with intent.</div>
       </div>
     </div>
