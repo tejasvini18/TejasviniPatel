@@ -88,7 +88,7 @@ html, body {
 
 /* SECTIONS */
 .section {
-  padding: 90px 8%;
+  padding: 100px 8%;
   max-width: 1400px;
   margin: auto;
 }
@@ -277,6 +277,30 @@ html, body {
 }
 .timeline-points li {
   margin-bottom: 4px;
+}
+
+/* EXPERIENCE GRID */
+.experience-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.exp-card {
+  padding: 24px;
+  border-radius: 20px;
+}
+.exp-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.exp-points {
+  padding-left: 18px;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+.exp-points li {
+  margin-bottom: 6px;
 }
 
 /* ABOUT / CONTACT LAYOUTS */
