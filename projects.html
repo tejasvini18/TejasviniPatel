@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="theme-dark">
   <header class="site-header glass-blur">
     <div class="nav-inner">
@@ -17,6 +18,7 @@
           <span class="brand-url"></span>
         </div>
       </a>
+
       <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -27,6 +29,7 @@
         <a href="certifications.html">Certificates</a>
         <a href="contact.html">Contact</a>
       </nav>
+
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span>
       </button>
@@ -45,31 +48,140 @@
       </div>
     </section>
 
+    <!-- PROJECT GRID -->
     <section class="section section-observe">
       <div class="grid-2">
+
+        <!-- 1. Cloth Shopping -->
         <div class="glass-card">
-          <h2>Billing platform regression & stability</h2>
+          <h2>Cloth Shopping – E‑Commerce Platform</h2>
           <p>
-            Designed regression suites and automation coverage for critical billing flows,
-            reducing production defects and stabilizing releases.
+            End‑to‑end testing of a full e‑commerce shopping experience, ensuring reliability across UI, API, and payment systems.
           </p>
           <ul class="bullet-list">
-            <li>Automated high-risk billing scenarios with Selenium / Playwright.</li>
-            <li>Integrated suites into CI to run on every merge.</li>
-            <li>Improved confidence in monthly release cycles.</li>
+            <li>Tested product listing, filtering, cart, checkout, and order lifecycle.</li>
+            <li>Performed cross‑browser and responsive testing.</li>
+            <li>Validated payment gateway flows and order confirmations.</li>
           </ul>
         </div>
+
+        <!-- 2. Food Ordering System -->
         <div class="glass-card">
-          <h2>Security-aware QA for web applications</h2>
+          <h2>Food Ordering System</h2>
           <p>
-            Combined functional testing with security checks to catch vulnerabilities early.
+            Multi‑vendor food ordering platform with real‑time order tracking and payment workflows.
           </p>
           <ul class="bullet-list">
-            <li>Used OWASP ZAP and Burp Suite for dynamic analysis.</li>
-            <li>Raised actionable issues with clear reproduction and impact.</li>
-            <li>Helped teams adopt secure coding practices.</li>
+            <li>Tested menu, cart, delivery, and cancellation flows.</li>
+            <li>Performed API testing for order status updates.</li>
+            <li>Validated concurrency and high‑traffic ordering scenarios.</li>
           </ul>
         </div>
+
+        <!-- 3. Pocket Wallet -->
+        <div class="glass-card">
+          <h2>Pocket Wallet – Digital Payments</h2>
+          <p>
+            Secure wallet system supporting transfers, bill payments, and transaction history.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested wallet top‑up, transfers, refunds, and OTP flows.</li>
+            <li>Performed security testing (XSS, CSRF, SQLi).</li>
+            <li>Validated encryption and transaction ledger accuracy.</li>
+          </ul>
+        </div>
+
+        <!-- 4. Library Management System -->
+        <div class="glass-card">
+          <h2>Library Management System</h2>
+          <p>
+            Complete LMS for book inventory, student management, and issue/return workflows.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested search, reservation, fine calculation, and overdue logic.</li>
+            <li>Performed DB validation for book availability and audit logs.</li>
+            <li>Designed regression suite for every release cycle.</li>
+          </ul>
+        </div>
+
+        <!-- 5. E‑Learning System -->
+        <div class="glass-card">
+          <h2>E‑Learning System</h2>
+          <p>
+            Learning platform supporting courses, quizzes, assignments, and progress tracking.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested enrollment, video playback, quiz engine, and certificates.</li>
+            <li>Performed API testing for scoring and progress tracking.</li>
+            <li>Validated role‑based access and exam load stability.</li>
+          </ul>
+        </div>
+
+        <!-- 6. DNS System -->
+        <div class="glass-card">
+          <h2>DNS System Testing</h2>
+          <p>
+            Validation of DNS resolution, propagation, and record accuracy across global servers.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested A, AAAA, CNAME, MX, TXT, and NS records.</li>
+            <li>Validated TTL behaviour and caching logic.</li>
+            <li>Performed DNSSEC and negative testing.</li>
+          </ul>
+        </div>
+
+        <!-- 7. Trademark System -->
+        <div class="glass-card">
+          <h2>Trademark Search & Verification</h2>
+          <p>
+            Platform for searching, validating, and tracking trademark applications.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested search accuracy across trademark classes.</li>
+            <li>Validated application workflows and document uploads.</li>
+            <li>Performed API testing for indexing and classification.</li>
+          </ul>
+        </div>
+
+        <!-- 8. WHOIS Lookup -->
+        <div class="glass-card">
+          <h2>WHOIS Lookup System</h2>
+          <p>
+            System for retrieving domain ownership, registrar, and expiry details.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested WHOIS queries for multiple TLDs.</li>
+            <li>Validated rate‑limiting, throttling, and error handling.</li>
+            <li>Ensured accuracy of registrar and expiry information.</li>
+          </ul>
+        </div>
+
+        <!-- 9. HMRS -->
+        <div class="glass-card">
+          <h2>HMRS – Hospital Management System</h2>
+          <p>
+            Healthcare platform for patient records, appointments, billing, and staff management.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested EMR accuracy, billing, and appointment workflows.</li>
+            <li>Performed PHI security testing and access control validation.</li>
+            <li>Designed regression suite for critical medical modules.</li>
+          </ul>
+        </div>
+
+        <!-- 10. Campus Management -->
+        <div class="glass-card">
+          <h2>Campus Management System</h2>
+          <p>
+            System for managing students, staff, attendance, fees, and academic records.
+          </p>
+          <ul class="bullet-list">
+            <li>Tested admissions, attendance, timetable, and fee modules.</li>
+            <li>Validated role‑based access for Admin, Teacher, Student, Parent.</li>
+            <li>Performed DB validation for academic records.</li>
+          </ul>
+        </div>
+
       </div>
     </section>
   </main>
@@ -80,6 +192,7 @@
         <div class="footer-name">Tejasvini Patel</div>
         <div class="footer-tagline">Quality without compromise.</div>
       </div>
+
       <div class="footer-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -90,6 +203,7 @@
         <a href="certifications.html">Certificates</a>
         <a href="contact.html">Contact</a>
       </div>
+
       <div class="footer-right">
         <div>© 2026 www.tejasvinipatel.com</div>
         <div class="footer-note">Built with precision, tested with intent.</div>
