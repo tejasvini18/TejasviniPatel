@@ -50,7 +50,181 @@
     <section class="section section-observe">
       <div class="grid-2">
 
-        <!-- CONTACT FORM -->
+        <!-- CONTACT OPTIONS -->
+        <div class="glass-card">
+          <h2>Get in touch</h2>
+          <p>You can reach me through any of the options below.</p>
+
+          <div class="contact-options">
+
+            <button class="btn primary btn-glow" onclick="copyEmail()">
+              Copy Email: tejasvini18p@gmail.com
+            </button>
+
+            <a href="mailto:tejasvini18p@gmail.com" class="btn secondary">
+              Open Email App
+            </a>
+
+            <a href="https://www.linkedin.com/in/tejasvinipatel" target="_blank" class="btn secondary">
+              Connect on LinkedIn
+            </a>
+
+            <a href="https://github.com/" target="_blank" class="btn secondary">
+              Visit GitHub
+            </a>
+
+          </div>
+
+          <p id="copyStatus" class="muted small"></p>
+        </div>
+
+        <!-- MAP WITH RED PIN (NO API KEY) -->
+        <div class="glass-card">
+          <h2>Location</h2>
+          <p>Based in Swindon, UK · Open to UK-wide roles.</p>
+
+          <div class="map-container">
+            <iframe
+              title="Map - 35 Prospero Way, Swindon"
+              src="https://www.google.com/maps?q=35+Prospero+Way,+Swindon,+UK&hl=en&z=15&output=embed"
+              width="100%"
+              height="260"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <p class="muted small">Red pin indicates your base location in Swindon, UK.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer glass-blur">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-name">Tejasvini Patel</div>
+        <div class="footer-tagline">Quality without compromise.</div>
+      </div>
+
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <div>© 2026 www.tejasvinipatel.com</div>
+        <div class="footer-note">Built with precision, tested with intent.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function copyEmail() {
+      navigator.clipboard.writeText("tejasvini18p@gmail.com");
+      const status = document.getElementById("copyStatus");
+      status.textContent = "Email copied!";
+      status.style.color = "#4caf50";
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Tejasvini Patel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-dark">
+  <header class="site-header glass-blur">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <img src="logo.png" alt="TP Logo" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Tejasvini Patel</span>
+          <span class="brand-url"></span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certificates</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero section-observe">
+      <div class="section-header">
+        <p class="eyebrow">CONTACT</p>
+        <h1>Let’s talk about quality.</h1>
+        <p class="hero-sub">
+          Whether it’s a role, a project, or a collaboration—if quality matters to you, I’d love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-observe">
+      <div class="grid-2">
+
+        <!-- CONTACT FORM --
         <div class="glass-card">
           <h2>Send a message</h2>
 
@@ -81,7 +255,7 @@
           <p id="formStatus" class="muted small"></p>
         </div>
 
-        <!-- MAP -->
+        <!-- MAP --
         <div class="glass-card">
           <h2>Location</h2>
           <p>Based in Swindon, UK · Open to UK-wide roles.</p>
@@ -130,7 +304,7 @@
     </div>
   </footer>
 
-  <!-- EMAILJS SCRIPT -->
+  <!-- EMAILJS SCRIPT --
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
   <script>
@@ -165,3 +339,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+-->
