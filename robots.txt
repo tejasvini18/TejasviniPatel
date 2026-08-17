@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.tejasvinipatel.com/sitemap.xml
+Sitemap: https://tejasvinipatel.com/sitemap.xml
