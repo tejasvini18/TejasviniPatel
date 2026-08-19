@@ -1,10 +1,3 @@
-# Tejasvini Patel Premium QA Portfolio
-Built to match the supplied reference: dark navy/black UI, purple glow, glass panels, circular profile image, floating QA technology cards, metrics, timeline, projects, skills, automation lab, certifications and contact.
+# Tejasvini Patel Premium Multi-Page QA Portfolio
 
-Add these files/assets:
-- profile.png
-- logo.png
-- favicon.png
-- assets/Tejasvini-Patel-CV.pdf
-
-Deploy the folder to GitHub Pages with CNAME set to tejasvinipatel.com.
+All files are intentionally in one folder. Replace profile.png with your own photo and Tejasvini-Patel-CV.pdf with your real CV before publishing.

@@ -1,1 +1,1 @@
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+document.addEventListener("DOMContentLoaded",()=>{const o=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("show")),{threshold:.08});document.querySelectorAll(".reveal").forEach(x=>o.observe(x));document.querySelectorAll("[data-year]").forEach(x=>x.textContent=new Date().getFullYear());});
