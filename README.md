@@ -1,12 +1,10 @@
-# tejasvinipatel.com
+# Tejasvini Patel Premium QA Portfolio
+Built to match the supplied reference: dark navy/black UI, purple glow, glass panels, circular profile image, floating QA technology cards, metrics, timeline, projects, skills, automation lab, certifications and contact.
 
-Premium QA Automation Engineer portfolio for Tejasvini Patel.
+Add these files/assets:
+- profile.png
+- logo.png
+- favicon.png
+- assets/Tejasvini-Patel-CV.pdf
 
-## Design
-Dark glassmorphism, purple/cyan neon accents, animated orbit effects, reveal-on-scroll cards, responsive navigation and professional profile imagery.
-
-## Files
-All pages are root-level files so GitHub Pages works without an assets-folder path mismatch. The CV is linked as `Tejasvini-Patel-CV.pdf`.
-
-## SEO
-The homepage uses `tejasvinipatel.com` as the canonical site identity, Person structured data, Open Graph image metadata, robots.txt and sitemap.xml.
+Deploy the folder to GitHub Pages with CNAME set to tejasvinipatel.com.
