@@ -1,3 +1,35 @@
-# Tejasvini Patel Premium Multi-Page QA Portfolio
+# Tejasvini Patel — Premium Multi-Page QA Portfolio
 
-All files are intentionally in one folder. Replace profile.png with your own photo and Tejasvini-Patel-CV.pdf with your real CV before publishing.
+## Structure
+All website files are intentionally kept in **one folder** — there is no assets folder.
+
+Pages:
+- index.html (Home)
+- about.html
+- experience.html
+- projects.html
+- skills.html
+- certifications.html
+- education.html
+- automation-lab.html
+- contact.html
+- 404.html
+
+Shared files:
+- style.css
+- script.js
+- logo.png / favicon.png / profile.png
+- Tejasvini-Patel-CV.pdf
+
+## Features
+- Premium dark QA/SDET visual style
+- Larger personal logo in header and footer
+- Home replaces Index
+- Separate pages instead of a single long page
+- Animated reveal effects, counters, floating tech badges, progress bar and pointer glow
+- Project image-style browser thumbnails generated in CSS, so no assets folder is required
+- Project filters and clickable case-study modal; no Demo/GitHub buttons
+- Expanded experience, skills, education and certification pages
+- LinkedIn, GitHub and email links
+- Automatic copyright year
+- Responsive mobile navigation
