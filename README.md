@@ -33,3 +33,6 @@ Shared files:
 - LinkedIn, GitHub and email links
 - Automatic copyright year
 - Responsive mobile navigation
+
+
+Updated v3: reference-look multi-page navigation, company-sequenced projects, icon project visuals, and complete certificate list with a common LinkedIn certifications link.
