@@ -815,3 +815,84 @@ main{min-height:calc(100vh - 94px)!important}
   .hero-visual .reference-orbit .tech i{font-size:16px!important;margin-bottom:3px!important}
   .hero-visual .reference-orbit .t1,.hero-visual .reference-orbit .t4{width:170px!important;min-width:170px!important;height:55px!important;min-height:55px!important}
 }
+
+/* === Exact video-reference profile layout === */
+.hero-visual .reference-profile{
+  width:min(620px,92vw)!important;
+  aspect-ratio:1/1!important;
+  position:relative!important;
+  display:block!important;
+}
+.hero-visual .reference-profile .reference-halo{
+  width:88%!important;height:88%!important;left:6%!important;top:6%!important;
+  background:radial-gradient(circle,rgba(126,64,205,.18) 0 45%,rgba(96,42,173,.10) 58%,transparent 74%)!important;
+}
+.hero-visual .reference-profile .reference-orbit-ring.ring-one{
+  width:86%!important;height:86%!important;
+  border:1px solid rgba(180,92,255,.86)!important;
+  box-shadow:0 0 42px rgba(168,85,247,.38),0 0 100px rgba(100,45,180,.18)!important;
+}
+.hero-visual .reference-profile .reference-orbit-ring.ring-two{width:76%!important;height:76%!important;border-color:rgba(168,85,247,.34)!important}
+.hero-visual .reference-profile .reference-orbit-ring.ring-three{width:67%!important;height:67%!important;border:1px dashed rgba(168,85,247,.22)!important}
+.hero-visual .reference-profile .reference-orbit-ring.ring-four{width:58%!important;height:58%!important;border-color:rgba(168,85,247,.16)!important}
+
+/* Circular photo exactly like the supplied reference frame */
+.hero-visual .reference-profile .reference-photo-frame{
+  left:50%!important;top:55%!important;transform:translate(-50%,-50%)!important;
+  width:70%!important;height:70%!important;padding:9px!important;
+  border-radius:50%!important;
+  background:linear-gradient(145deg,rgba(91,45,148,.98),rgba(38,24,72,.99))!important;
+  box-shadow:0 0 0 7px rgba(121,64,190,.24),0 0 48px rgba(168,85,247,.32),0 30px 90px rgba(0,0,0,.55)!important;
+}
+.hero-visual .reference-profile .reference-photo-frame:before{
+  inset:6px!important;border-radius:50%!important;border:2px solid rgba(168,85,247,.68)!important;
+}
+.hero-visual .reference-profile .portrait{
+  width:100%!important;height:100%!important;display:block!important;
+  border:4px solid #0b1020!important;border-radius:50%!important;
+  object-fit:cover!important;object-position:center top!important;
+}
+
+/* Small individual skill cards around the circle; no stretched/rotated cards */
+.hero-visual .reference-profile .reference-orbit{
+  inset:0!important;position:absolute!important;animation:none!important;z-index:10!important;
+}
+.hero-visual .reference-profile .reference-orbit .tech{
+  width:116px!important;min-width:116px!important;height:78px!important;min-height:78px!important;
+  padding:9px 8px!important;display:grid!important;place-items:center!important;align-content:center!important;
+  background:linear-gradient(145deg,rgba(8,17,33,.98),rgba(5,12,25,.98))!important;
+  border:1px solid rgba(113,145,187,.28)!important;border-radius:17px!important;
+  box-shadow:0 14px 35px rgba(0,0,0,.42),inset 0 0 22px rgba(48,91,151,.06)!important;
+  transform:none!important;animation:none!important;
+}
+.hero-visual .reference-profile .reference-orbit .tech:after{
+  inset:9px!important;border-radius:50%!important;border-color:rgba(105,145,193,.12)!important;
+}
+.hero-visual .reference-profile .reference-orbit .tech i{
+  font-size:22px!important;margin:0 0 5px!important;color:#c56dff!important;
+}
+.hero-visual .reference-profile .reference-orbit .tech b{
+  font-size:13px!important;font-weight:700!important;line-height:1!important;color:#dfe5f1!important;
+}
+
+/* Clockwise positions copied from the supplied video reference */
+.hero-visual .reference-profile .reference-orbit .t1{top:3%!important;left:50%!important;transform:translateX(-50%)!important}
+.hero-visual .reference-profile .reference-orbit .t2{top:19%!important;left:22%!important;right:auto!important}
+.hero-visual .reference-profile .reference-orbit .t3{top:25%!important;right:6%!important;left:auto!important}
+.hero-visual .reference-profile .reference-orbit .t4{top:51%!important;right:1%!important;left:auto!important;transform:translateY(-50%)!important}
+.hero-visual .reference-profile .reference-orbit .t5{bottom:7%!important;right:8%!important;left:auto!important}
+.hero-visual .reference-profile .reference-orbit .t6{bottom:1%!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+.hero-visual .reference-profile .reference-orbit .t7{bottom:22%!important;left:10%!important;right:auto!important}
+
+@media(max-width:700px){
+  .hero-visual .reference-profile{width:min(500px,96vw)!important}
+  .hero-visual .reference-profile .reference-photo-frame{width:68%!important;height:68%!important;top:55%!important}
+  .hero-visual .reference-profile .reference-orbit .tech{width:82px!important;min-width:82px!important;height:62px!important;min-height:62px!important;padding:6px!important;border-radius:14px!important}
+  .hero-visual .reference-profile .reference-orbit .tech i{font-size:17px!important;margin-bottom:3px!important}
+  .hero-visual .reference-profile .reference-orbit .tech b{font-size:9px!important}
+  .hero-visual .reference-profile .reference-orbit .t2{left:7%!important;top:18%!important}
+  .hero-visual .reference-profile .reference-orbit .t3{right:3%!important;top:24%!important}
+  .hero-visual .reference-profile .reference-orbit .t4{right:-1%!important}
+  .hero-visual .reference-profile .reference-orbit .t5{right:3%!important;bottom:8%!important}
+  .hero-visual .reference-profile .reference-orbit .t7{left:3%!important;bottom:22%!important}
+}
