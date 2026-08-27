@@ -338,3 +338,202 @@ main{min-height:calc(100vh - 94px)!important}
  .cert-card{min-height:245px!important}.cert-card h3{font-size:17px!important}
  .footer-links:has(.footer-explore-col){grid-template-columns:1fr 1fr!important;gap:14px!important}
 }
+
+
+/* =========================================================
+   2026 visual refresh — floating command header + radial skills
+   ========================================================= */
+.site-header{
+  background:linear-gradient(180deg,rgba(2,3,7,.94),rgba(2,3,7,.74))!important;
+  border-bottom:0!important;
+  box-shadow:none!important;
+  backdrop-filter:blur(18px)!important;
+}
+.site-header:before{
+  content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);
+  width:min(900px,70vw);height:1px;
+  background:linear-gradient(90deg,transparent,#a855f7aa,#d946efaa,#63a8ffaa,transparent);
+  box-shadow:0 0 28px #a855f744;
+}
+.nav-shell{
+  width:min(1500px,calc(100% - 34px));height:76px;margin:10px auto 0;
+  padding:0 12px 0 18px;display:flex;align-items:center;gap:16px;
+  border:1px solid rgba(255,255,255,.12);border-radius:22px;
+  background:linear-gradient(120deg,rgba(12,17,29,.96),rgba(7,10,18,.92));
+  box-shadow:0 18px 60px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.05);
+  position:relative;overflow:hidden;
+}
+.nav-shell:after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(105deg,rgba(168,85,247,.08),transparent 28%,transparent 72%,rgba(99,168,255,.06));
+}
+.brand{position:relative;z-index:1;gap:11px!important}
+.brand-mark{position:relative;width:44px;height:44px;display:grid;place-items:center}
+.brand-mark .brand-logo{width:42px!important;height:42px!important;border:1px solid #b46cffaa!important;box-shadow:0 0 0 4px #9b5cff0d,0 0 22px #9b5cff28!important}
+.brand-mark i{
+  position:absolute;right:-1px;bottom:-1px;width:10px;height:10px;border-radius:50%;
+  background:#42d788;border:2px solid #080b12;box-shadow:0 0 12px #42d788;
+}
+.brand-copy{display:flex;flex-direction:column;line-height:1}
+.brand-copy strong{font:700 15px 'Space Grotesk',Inter,sans-serif;letter-spacing:.1px}
+.brand-copy small{margin-top:5px;color:#69758d;font-size:7px;letter-spacing:1.35px;font-weight:800}
+.nav-links{
+  position:relative;z-index:1;margin-left:auto!important;display:flex;align-items:center;
+  gap:3px!important;padding:5px;border:1px solid rgba(255,255,255,.07);border-radius:15px;
+  background:#050912aa;
+}
+.nav-links a{
+  font-size:10.5px!important;font-weight:600;padding:9px 10px!important;border-radius:10px;
+  color:#8e99ad!important;transition:.25s;
+}
+.nav-links a:after{display:none!important}
+.nav-links a:hover{color:#fff!important;background:#ffffff08}
+.nav-links a.active{
+  color:#fff!important;background:linear-gradient(135deg,#8b5cf626,#d946ef16);
+  box-shadow:inset 0 0 0 1px #a855f733,0 5px 18px #8b5cf612;
+}
+.nav-actions{position:relative;z-index:1;display:flex;align-items:center;gap:8px}
+.nav-status{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 10px;border-radius:999px;
+  border:1px solid #42d7882e;background:#42d7880b;color:#a8b4c8;font-size:9px;font-weight:700;white-space:nowrap;
+}
+.nav-status i{width:6px;height:6px;border-radius:50%;background:#42d788;box-shadow:0 0 10px #42d788}
+.nav-cv{
+  display:inline-flex!important;align-items:center;gap:7px;padding:10px 13px!important;
+  border-radius:12px!important;border:1px solid #a855f744!important;
+  background:linear-gradient(135deg,#8b5cf61a,#d946ef12)!important;
+  color:#eee!important;font-size:10px!important;font-weight:800!important;
+}
+.nav-cv:hover{transform:translateY(-2px);border-color:#c07aff77!important;box-shadow:0 8px 24px #8b5cf622}
+.menu{display:none!important}
+
+/* Hero: make the portrait the visual anchor, with circular skill satellites */
+.hero-visual{min-height:680px!important}
+.portrait-wrap{
+  width:min(620px,94vw)!important;aspect-ratio:1;isolation:isolate;
+}
+.portrait-wrap:before{
+  content:"";position:absolute;inset:12%;border-radius:50%;
+  background:radial-gradient(circle,#9b5cff10 0%,transparent 64%);
+  box-shadow:0 0 110px #9b5cff22;z-index:-1;
+}
+.portrait-ring{
+  inset:8%!important;border:1px solid #b86cff9c!important;
+  box-shadow:0 0 0 1px #63a8ff1c,0 0 80px #9b5cff2c,0 0 160px #9b5cff12!important;
+  animation:orbitGlow 7s ease-in-out infinite!important;
+}
+.portrait-ring:before{
+  inset:7%!important;border:1px dashed #63a8ff4d!important;
+  animation:spin 34s linear infinite;
+}
+.portrait-ring:after{
+  inset:17%!important;border:1px solid #d447df35!important;
+  box-shadow:inset 0 0 30px #9b5cff0c;
+}
+.portrait{
+  width:56%!important;height:70%!important;object-fit:cover!important;
+  object-position:center 24%!important;border-radius:46%!important;
+  border:5px solid #ffffff12!important;
+  box-shadow:0 0 0 11px #9b5cff0b,0 0 0 16px #ffffff04,0 35px 90px #000b!important;
+}
+.reference-orbit{
+  animation:none!important;inset:0!important;z-index:4;
+}
+.reference-orbit:before{
+  content:"";position:absolute;inset:4%;border-radius:50%;
+  border:1px solid #ffffff0c;
+  background:conic-gradient(from 20deg,transparent 0 14%,#a855f72c 15%,transparent 17% 34%,#63a8ff25 35%,transparent 37% 64%,#d946ef24 65%,transparent 67% 100%);
+  -webkit-mask:radial-gradient(circle,transparent 66%,#000 67% 67.4%,transparent 68%);
+  mask:radial-gradient(circle,transparent 66%,#000 67% 67.4%,transparent 68%);
+  animation:spin 22s linear infinite;
+}
+.reference-orbit .tech{
+  width:76px!important;min-width:76px!important;height:76px!important;min-height:76px!important;
+  padding:8px!important;border-radius:50%!important;display:grid!important;place-items:center!important;
+  background:radial-gradient(circle at 35% 28%,#1b2235,#080d17 72%)!important;
+  border:1px solid #b67aff55!important;box-shadow:0 12px 30px #0009,0 0 24px #9b5cff12!important;
+  text-align:center;animation:skillFloat 4.8s ease-in-out infinite!important;
+}
+.reference-orbit .tech:after{
+  content:"";position:absolute;inset:5px;border-radius:50%;border:1px solid #ffffff0a;pointer-events:none;
+}
+.reference-orbit .tech i{font-size:20px!important;margin:0 0 3px!important;line-height:1}
+.reference-orbit .tech b{
+  font-size:7.5px!important;line-height:1.05!important;white-space:nowrap;letter-spacing:.1px;
+  color:#d7ddeb!important;font-weight:700;
+}
+.reference-orbit .t1{top:0!important;left:43%!important;transform:none!important}
+.reference-orbit .t2{top:13%!important;right:3%!important;transform:none!important}
+.reference-orbit .t3{top:43%!important;right:-1%!important;transform:none!important}
+.reference-orbit .t4{bottom:12%!important;right:9%!important;transform:none!important}
+.reference-orbit .t5{bottom:1%!important;left:42%!important;transform:none!important}
+.reference-orbit .t6{bottom:13%!important;left:8%!important;transform:none!important}
+.reference-orbit .t7{top:43%!important;left:-1%!important;transform:none!important}
+.reference-orbit .t8{top:13%!important;left:3%!important;transform:none!important}
+.reference-orbit .t9{top:1%!important;right:42%!important;transform:none!important}
+
+/* Project cards: actual project artwork, not repeated stock photos */
+.project-image-thumb{
+  height:270px!important;padding:0!important;display:block!important;position:relative;
+  background:#070d18!important;border-bottom:1px solid #ffffff0b!important;
+}
+.project-image-thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(3,7,15,.30));pointer-events:none}
+.project-image{
+  width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;
+  object-position:center!important;transition:transform .55s ease,filter .55s ease;
+}
+.project-card:hover .project-image{transform:scale(1.035);filter:saturate(1.08) brightness(1.04)}
+.project-body{position:relative}
+.project-body:before{
+  content:"";position:absolute;top:0;left:24px;right:24px;height:1px;
+  background:linear-gradient(90deg,transparent,#a855f755,transparent);
+}
+
+/* Featured projects on home use the same unique artwork */
+.reference-project-image{overflow:hidden!important}
+.reference-project-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.reference-project-card:hover .reference-project-image img{transform:scale(1.045)}
+
+/* Keyframes */
+@keyframes orbitGlow{0%,100%{transform:scale(1);opacity:.92}50%{transform:scale(1.018);opacity:1}}
+@keyframes skillFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
+
+/* Responsive */
+@media(max-width:1200px){
+  .nav-links a{padding:8px 7px!important;font-size:9.5px!important}
+  .nav-status{display:none}
+}
+@media(max-width:900px){
+  .nav-shell{height:72px;margin-top:7px;border-radius:18px;padding-left:13px}
+  .nav-links{display:none!important}
+  .menu{display:grid!important;place-items:center!important;width:42px;height:42px;border:1px solid #ffffff12!important;border-radius:12px;background:#ffffff06!important;color:#fff!important}
+  .nav-cv{display:none!important}
+  .brand-copy small{display:none}
+  .mobile-menu{top:89px!important;right:18px!important;left:18px!important;border:1px solid #ffffff14!important;border-radius:18px!important;background:#070b14f5!important;box-shadow:0 25px 70px #000a!important}
+  .hero-visual{min-height:540px!important}
+  .portrait-wrap{width:min(600px,100%)!important}
+}
+@media(max-width:620px){
+  .nav-shell{width:calc(100% - 20px);height:66px;padding:0 9px 0 10px}
+  .brand-copy strong{font-size:13px}
+  .brand-mark,.brand-mark .brand-logo{width:38px!important;height:38px!important}
+  .nav-actions{margin-left:auto}
+  .hero-visual{min-height:450px!important}
+  .portrait-wrap{width:100%!important}
+  .portrait{width:57%!important;height:67%!important}
+  .portrait-ring{inset:9%!important}
+  .reference-orbit .tech{width:58px!important;min-width:58px!important;height:58px!important;min-height:58px!important}
+  .reference-orbit .tech i{font-size:14px!important}
+  .reference-orbit .tech b{font-size:6.3px!important}
+  .reference-orbit .t3,.reference-orbit .t7{display:grid!important}
+  .reference-orbit .t1{top:1%!important}
+  .reference-orbit .t2{right:0!important;top:16%!important}
+  .reference-orbit .t3{right:-2%!important;top:43%!important}
+  .reference-orbit .t4{right:4%!important;bottom:10%!important}
+  .reference-orbit .t5{bottom:0!important}
+  .reference-orbit .t6{left:4%!important;bottom:10%!important}
+  .reference-orbit .t7{left:-2%!important;top:43%!important}
+  .reference-orbit .t8{left:0!important;top:16%!important}
+  .reference-orbit .t9{top:1%!important}
+  .project-image-thumb{height:225px!important}
+}
