@@ -675,3 +675,47 @@ main{min-height:calc(100vh - 94px)!important}
   .hero-visual .reference-orbit .tech i{font-size:14px!important}
   .hero-visual .reference-orbit .tech b{font-size:6.5px!important}
 }
+
+
+/* EXACT VIDEO PROFILE STYLE OVERRIDE */
+.hero-visual{min-height:700px!important;display:grid!important;place-items:center!important}
+.hero-visual .portrait-wrap{width:min(650px,94vw)!important;height:min(650px,94vw)!important;aspect-ratio:1/1!important;position:relative!important;display:grid!important;place-items:center!important}
+.hero-visual .portrait-wrap:before{content:"";position:absolute;inset:9%;border-radius:50%;background:radial-gradient(circle,rgba(151,65,255,.13) 0 55%,rgba(151,65,255,0) 72%);z-index:0;pointer-events:none}
+.hero-visual .portrait-ring{inset:7%!important;border:1px solid rgba(170,78,255,.75)!important;box-shadow:0 0 24px rgba(168,85,247,.48),0 0 90px rgba(168,85,247,.20),inset 0 0 35px rgba(168,85,247,.10)!important;animation:none!important}
+.hero-visual .portrait-ring:before{inset:8%!important;border:1px solid rgba(168,85,247,.18)!important;border-style:dashed!important}
+.hero-visual .portrait-ring:after{inset:15%!important;border:1px solid rgba(168,85,247,.22)!important}
+.hero-visual .portrait{width:54%!important;height:54%!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center 24%!important;border-radius:50%!important;border:7px solid rgba(10,14,29,.92)!important;box-shadow:0 0 0 7px rgba(168,85,247,.10),0 0 45px rgba(168,85,247,.25),0 25px 65px rgba(0,0,0,.55)!important;z-index:3!important}
+.hero-visual .reference-orbit{position:absolute!important;inset:0!important;border-radius:50%!important;animation:none!important;z-index:5!important}
+.hero-visual .reference-orbit .tech{width:auto!important;min-width:104px!important;min-height:58px!important;padding:9px 12px!important;background:linear-gradient(145deg,rgba(8,18,34,.97),rgba(6,13,26,.97))!important;border:1px solid rgba(113,143,180,.24)!important;border-radius:14px!important;box-shadow:0 10px 28px rgba(0,0,0,.40),0 0 20px rgba(91,74,150,.08)!important;text-align:center!important;animation:none!important;backdrop-filter:blur(8px)!important}
+.hero-visual .reference-orbit .tech i{font-size:20px!important;margin:0 0 4px!important;color:#c56cff!important;line-height:1!important}
+.hero-visual .reference-orbit .tech b{font-size:10px!important;line-height:1.1!important;white-space:nowrap!important;letter-spacing:0!important}
+.hero-visual .reference-orbit .t1{top:1%!important;left:30%!important;transform:translateX(-50%)!important}
+.hero-visual .reference-orbit .t2{top:18%!important;right:0!important}
+.hero-visual .reference-orbit .t3{top:46%!important;right:-1%!important;transform:translateY(-50%)!important}
+.hero-visual .reference-orbit .t4{bottom:10%!important;right:12%!important}
+.hero-visual .reference-orbit .t5{bottom:0!important;left:50%!important;transform:translateX(-50%)!important}
+.hero-visual .reference-orbit .t6{bottom:11%!important;left:9%!important}
+.hero-visual .reference-orbit .t7{top:46%!important;left:-1%!important;transform:translateY(-50%)!important}
+@media(max-width:900px){.hero-visual{min-height:560px!important}.hero-visual .portrait-wrap{width:min(560px,96vw)!important;height:min(560px,96vw)!important}.hero-visual .portrait{width:54%!important;height:54%!important}.hero-visual .reference-orbit .tech{min-width:86px!important;min-height:52px!important;padding:8px!important}.hero-visual .reference-orbit .tech i{font-size:17px!important}.hero-visual .reference-orbit .tech b{font-size:8px!important}}
+@media(max-width:620px){.hero-visual{min-height:450px!important}.hero-visual .portrait-wrap{width:100%!important;height:auto!important;aspect-ratio:1/1!important}.hero-visual .portrait{width:52%!important;height:52%!important}.hero-visual .reference-orbit .tech{min-width:64px!important;min-height:46px!important;padding:6px!important;border-radius:11px!important}.hero-visual .reference-orbit .tech i{font-size:14px!important}.hero-visual .reference-orbit .tech b{font-size:6.5px!important}.hero-visual .reference-orbit .t1{left:28%!important}.hero-visual .reference-orbit .t2{right:1%!important}.hero-visual .reference-orbit .t3{right:-1%!important}.hero-visual .reference-orbit .t4{right:6%!important}.hero-visual .reference-orbit .t6{left:6%!important}.hero-visual .reference-orbit .t7{left:-1%!important}}
+
+
+/* Exact reference-video profile layout: only the home profile/orbit is affected. */
+.hero-visual .portrait-wrap{width:min(650px,94vw)!important;height:min(650px,94vw)!important}
+.hero-visual .portrait-ring{inset:7%!important;border:1px solid rgba(180,80,255,.78)!important;box-shadow:0 0 25px rgba(168,85,247,.52),0 0 95px rgba(168,85,247,.22),inset 0 0 35px rgba(168,85,247,.11)!important;animation:none!important}
+.hero-visual .portrait-ring:before{inset:8%!important;border:1px solid rgba(168,85,247,.18)!important;border-style:dashed!important}
+.hero-visual .portrait-ring:after{inset:15%!important;border:1px solid rgba(168,85,247,.22)!important}
+.hero-visual .portrait{width:54%!important;height:54%!important;border-radius:50%!important;object-fit:cover!important;object-position:center 24%!important;border:7px solid rgba(8,13,27,.96)!important;box-shadow:0 0 0 8px rgba(168,85,247,.11),0 0 48px rgba(168,85,247,.28),0 25px 65px rgba(0,0,0,.58)!important}
+.hero-visual .reference-orbit{inset:0!important;animation:none!important}
+.hero-visual .reference-orbit .tech{width:auto!important;min-width:114px!important;height:60px!important;min-height:60px!important;padding:8px 13px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;background:linear-gradient(145deg,rgba(8,18,34,.98),rgba(5,12,25,.98))!important;border:1px solid rgba(112,143,181,.28)!important;border-radius:14px!important;box-shadow:0 10px 30px rgba(0,0,0,.42),0 0 22px rgba(130,70,210,.09)!important;backdrop-filter:blur(8px)!important}
+.hero-visual .reference-orbit .tech i{font-size:21px!important;margin:0 0 4px!important;color:#c56cff!important;line-height:1!important}
+.hero-visual .reference-orbit .tech b{font-size:11px!important;line-height:1.1!important;white-space:nowrap!important;letter-spacing:0!important}
+.hero-visual .reference-orbit .t1{top:3%!important;left:50%!important;transform:translateX(-50%)!important}
+.hero-visual .reference-orbit .t2{top:12%!important;left:16%!important}
+.hero-visual .reference-orbit .t3{top:22%!important;right:4%!important}
+.hero-visual .reference-orbit .t4{top:48%!important;right:0!important;transform:translateY(-50%)!important}
+.hero-visual .reference-orbit .t5{bottom:10%!important;right:12%!important}
+.hero-visual .reference-orbit .t6{bottom:0!important;left:50%!important;transform:translateX(-50%)!important}
+.hero-visual .reference-orbit .t7{bottom:18%!important;left:10%!important}
+@media(max-width:900px){.hero-visual .portrait-wrap{width:min(560px,96vw)!important;height:min(560px,96vw)!important}.hero-visual .reference-orbit .tech{min-width:92px!important;height:54px!important;min-height:54px!important}.hero-visual .reference-orbit .tech i{font-size:17px!important}.hero-visual .reference-orbit .tech b{font-size:9px!important}}
+@media(max-width:620px){.hero-visual .portrait-wrap{width:100%!important;height:auto!important;aspect-ratio:1/1!important}.hero-visual .portrait{width:52%!important;height:52%!important}.hero-visual .reference-orbit .tech{min-width:70px!important;height:48px!important;min-height:48px!important;padding:5px 7px!important}.hero-visual .reference-orbit .tech i{font-size:14px!important}.hero-visual .reference-orbit .tech b{font-size:7px!important}.hero-visual .reference-orbit .t1{top:2%!important}.hero-visual .reference-orbit .t2{top:12%!important;left:4%!important}.hero-visual .reference-orbit .t3{top:21%!important;right:0!important}.hero-visual .reference-orbit .t4{right:-1%!important;top:48%!important}.hero-visual .reference-orbit .t5{right:5%!important;bottom:11%!important}.hero-visual .reference-orbit .t6{bottom:0!important}.hero-visual .reference-orbit .t7{left:3%!important;bottom:16%!important}}
