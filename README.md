@@ -36,3 +36,11 @@ Shared files:
 
 
 Updated v3: reference-look multi-page navigation, company-sequenced projects, icon project visuals, and complete certificate list with a common LinkedIn certifications link.
+
+
+## Latest visual update
+- Premium solid-black header with larger typography.
+- Unified dark grid/aurora background across pages.
+- Readable radial skill labels around the home profile with Postman and JMeter added.
+- Custom dashboard-style SVG preview artwork for every project and featured project.
+- Freelance labels normalized to “Freelance / Teaching”.
