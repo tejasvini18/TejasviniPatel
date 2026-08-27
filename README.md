@@ -44,3 +44,11 @@ Updated v3: reference-look multi-page navigation, company-sequenced projects, ic
 - Readable radial skill labels around the home profile with Postman and JMeter added.
 - Custom dashboard-style SVG preview artwork for every project and featured project.
 - Freelance labels normalized to “Freelance / Teaching”.
+
+
+## Latest requested refinements
+- Removed the “Open to work” header pill.
+- Increased the desktop header height slightly for better spacing.
+- Made the home-page profile photo perfectly circular.
+- Rebalanced the circular skill satellites so they sit evenly around the profile.
+- Refined project artwork presentation with consistent image cropping and overlays.

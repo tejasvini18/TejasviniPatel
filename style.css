@@ -356,7 +356,7 @@ main{min-height:calc(100vh - 94px)!important}
   box-shadow:0 0 28px #a855f744;
 }
 .nav-shell{
-  width:min(1500px,calc(100% - 34px));height:76px;margin:10px auto 0;
+  width:min(1500px,calc(100% - 34px));height:84px;margin:12px auto 0;
   padding:0 12px 0 18px;display:flex;align-items:center;gap:16px;
   border:1px solid rgba(255,255,255,.12);border-radius:22px;
   background:linear-gradient(120deg,rgba(12,17,29,.96),rgba(7,10,18,.92));
@@ -368,8 +368,8 @@ main{min-height:calc(100vh - 94px)!important}
   background:linear-gradient(105deg,rgba(168,85,247,.08),transparent 28%,transparent 72%,rgba(99,168,255,.06));
 }
 .brand{position:relative;z-index:1;gap:11px!important}
-.brand-mark{position:relative;width:44px;height:44px;display:grid;place-items:center}
-.brand-mark .brand-logo{width:42px!important;height:42px!important;border:1px solid #b46cffaa!important;box-shadow:0 0 0 4px #9b5cff0d,0 0 22px #9b5cff28!important}
+.brand-mark{position:relative;width:48px;height:48px;display:grid;place-items:center}
+.brand-mark .brand-logo{width:46px!important;height:46px!important;border:1px solid #b46cffaa!important;box-shadow:0 0 0 4px #9b5cff0d,0 0 22px #9b5cff28!important}
 .brand-mark i{
   position:absolute;right:-1px;bottom:-1px;width:10px;height:10px;border-radius:50%;
   background:#42d788;border:2px solid #080b12;box-shadow:0 0 12px #42d788;
@@ -383,7 +383,7 @@ main{min-height:calc(100vh - 94px)!important}
   background:#050912aa;
 }
 .nav-links a{
-  font-size:10.5px!important;font-weight:600;padding:9px 10px!important;border-radius:10px;
+  font-size:11px!important;font-weight:600;padding:10px 11px!important;border-radius:10px;
   color:#8e99ad!important;transition:.25s;
 }
 .nav-links a:after{display:none!important}
@@ -399,7 +399,7 @@ main{min-height:calc(100vh - 94px)!important}
 }
 .nav-status i{width:6px;height:6px;border-radius:50%;background:#42d788;box-shadow:0 0 10px #42d788}
 .nav-cv{
-  display:inline-flex!important;align-items:center;gap:7px;padding:10px 13px!important;
+  display:inline-flex!important;align-items:center;gap:7px;padding:11px 14px!important;
   border-radius:12px!important;border:1px solid #a855f744!important;
   background:linear-gradient(135deg,#8b5cf61a,#d946ef12)!important;
   color:#eee!important;font-size:10px!important;font-weight:800!important;
@@ -504,12 +504,12 @@ main{min-height:calc(100vh - 94px)!important}
   .nav-status{display:none}
 }
 @media(max-width:900px){
-  .nav-shell{height:72px;margin-top:7px;border-radius:18px;padding-left:13px}
+  .nav-shell{height:78px;margin-top:8px;border-radius:18px;padding-left:13px}
   .nav-links{display:none!important}
   .menu{display:grid!important;place-items:center!important;width:42px;height:42px;border:1px solid #ffffff12!important;border-radius:12px;background:#ffffff06!important;color:#fff!important}
   .nav-cv{display:none!important}
   .brand-copy small{display:none}
-  .mobile-menu{top:89px!important;right:18px!important;left:18px!important;border:1px solid #ffffff14!important;border-radius:18px!important;background:#070b14f5!important;box-shadow:0 25px 70px #000a!important}
+  .mobile-menu{top:96px!important;right:18px!important;left:18px!important;border:1px solid #ffffff14!important;border-radius:18px!important;background:#070b14f5!important;box-shadow:0 25px 70px #000a!important}
   .hero-visual{min-height:540px!important}
   .portrait-wrap{width:min(600px,100%)!important}
 }
@@ -536,4 +536,54 @@ main{min-height:calc(100vh - 94px)!important}
   .reference-orbit .t8{left:0!important;top:16%!important}
   .reference-orbit .t9{top:1%!important}
   .project-image-thumb{height:225px!important}
+}
+
+/* Final header refinement */
+.nav-status{display:none!important}
+
+/* Home profile: perfectly circular portrait */
+.portrait{
+  width:64%!important;
+  height:64%!important;
+  aspect-ratio:1 / 1!important;
+  border-radius:50%!important;
+  object-fit:cover!important;
+  object-position:center 24%!important;
+}
+
+/* Even circular skill satellites around the profile */
+.reference-orbit .tech{position:absolute!important}
+.reference-orbit .t1{top:0!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+.reference-orbit .t2{top:13%!important;right:3%!important;left:auto!important;transform:none!important}
+.reference-orbit .t3{top:50%!important;right:-1%!important;left:auto!important;transform:translateY(-50%)!important}
+.reference-orbit .t4{bottom:12%!important;right:3%!important;left:auto!important;transform:none!important}
+.reference-orbit .t5{bottom:0!important;left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+.reference-orbit .t6{bottom:12%!important;left:3%!important;right:auto!important;transform:none!important}
+.reference-orbit .t7{top:50%!important;left:-1%!important;right:auto!important;transform:translateY(-50%)!important}
+.reference-orbit .t8{top:13%!important;left:3%!important;right:auto!important;transform:none!important}
+.reference-orbit .t9{top:1%!important;right:50%!important;left:auto!important;transform:translateX(50%)!important}
+
+/* Keep the profile/orbit balanced on desktop */
+@media(min-width:901px){
+  .portrait-wrap{width:min(640px,96vw)!important}
+  .hero-visual{min-height:700px!important}
+}
+
+/* Project artwork presentation */
+.project-image-thumb{
+  background:#070d18!important;
+  overflow:hidden!important;
+}
+.project-image{
+  object-fit:cover!important;
+  object-position:center!important;
+  filter:saturate(1.02) contrast(1.02);
+}
+.project-image-thumb:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:linear-gradient(180deg,rgba(5,8,18,.02) 45%,rgba(5,8,18,.42) 100%);
 }
