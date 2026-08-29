@@ -52,7 +52,3 @@ Updated v3: reference-look multi-page navigation, company-sequenced projects, ic
 - Made the home-page profile photo perfectly circular.
 - Rebalanced the circular skill satellites so they sit evenly around the profile.
 - Refined project artwork presentation with consistent image cropping and overlays.
-
-
-## Profile video
-The homepage profile uses `assets/profile-video.mp4` as an autoplaying, muted, looping circular video, with `profile.png` as the poster fallback.
