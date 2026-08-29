@@ -12,17 +12,3 @@ const counters=document.querySelectorAll('[data-counter]');const counterObs=new 
 // Project filters + modal
 const filters=document.querySelectorAll('.filter');const cards=document.querySelectorAll('.project-card');filters.forEach(f=>f.addEventListener('click',()=>{filters.forEach(x=>x.classList.remove('active'));f.classList.add('active');const cat=f.dataset.filter;cards.forEach(c=>{c.style.display=cat==='all'||c.dataset.category===cat?'block':'none'})}));
 const modal=document.querySelector('.project-modal');if(modal){const title=modal.querySelector('[data-modal-title]'),body=modal.querySelector('[data-modal-body]');cards.forEach(card=>card.addEventListener('click',()=>{title.textContent=card.dataset.title;body.innerHTML=card.dataset.details;modal.classList.add('open');document.body.style.overflow='hidden'}));const close=()=>{modal.classList.remove('open');document.body.style.overflow=''};modal.querySelector('.close').addEventListener('click',close);modal.addEventListener('click',e=>{if(e.target===modal)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})}
-// Header theme control
-const themeToggle=document.querySelector('.theme-toggle');
-if(themeToggle){
-  const saved=localStorage.getItem('portfolio-theme');
-  if(saved==='light') document.body.classList.add('light-theme');
-  const icon=themeToggle.querySelector('i');
-  const sync=()=>{if(icon) icon.className=document.body.classList.contains('light-theme')?'fa-solid fa-sun':'fa-solid fa-moon'};
-  sync();
-  themeToggle.addEventListener('click',()=>{
-    document.body.classList.toggle('light-theme');
-    localStorage.setItem('portfolio-theme',document.body.classList.contains('light-theme')?'light':'dark');
-    sync();
-  });
-}
