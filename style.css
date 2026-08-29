@@ -896,3 +896,37 @@ main{min-height:calc(100vh - 94px)!important}
   .hero-visual .reference-profile .reference-orbit .t5{right:3%!important;bottom:8%!important}
   .hero-visual .reference-profile .reference-orbit .t7{left:3%!important;bottom:22%!important}
 }
+
+
+/* ===== FINAL PROFILE VIDEO — MATCH SUPPLIED VIDEO REFERENCE ===== */
+.hero-visual .reference-profile{
+  width:min(650px,94vw)!important;height:min(650px,94vw)!important;aspect-ratio:1/1!important;
+}
+.hero-visual .reference-profile .reference-photo-frame{
+  width:70%!important;height:70%!important;top:55%!important;left:50%!important;
+  transform:translate(-50%,-50%)!important;padding:9px!important;border-radius:50%!important;overflow:hidden!important;
+}
+.hero-visual .reference-profile .portrait{
+  display:block!important;width:100%!important;height:100%!important;border-radius:50%!important;
+  object-fit:cover!important;object-position:center!important;background:#0b1020!important;
+}
+.hero-visual .reference-profile .reference-orbit .tech{
+  width:116px!important;min-width:116px!important;height:78px!important;min-height:78px!important;
+  padding:8px!important;border-radius:15px!important;display:grid!important;place-items:center!important;align-content:center!important;
+}
+.hero-visual .reference-profile .reference-orbit .tech i{font-size:20px!important;margin:0 0 5px!important}
+.hero-visual .reference-profile .reference-orbit .tech b{font-size:10px!important}
+.hero-visual .reference-profile .reference-orbit .t1{top:10%!important;left:25%!important;right:auto!important;transform:rotate(-7deg)!important}
+.hero-visual .reference-profile .reference-orbit .t2{top:5%!important;left:50%!important;right:auto!important;transform:translateX(-50%) rotate(-7deg)!important}
+.hero-visual .reference-profile .reference-orbit .t3{top:13%!important;right:5%!important;left:auto!important;transform:rotate(-7deg)!important}
+.hero-visual .reference-profile .reference-orbit .t4{top:50%!important;right:1%!important;left:auto!important;transform:translateY(-50%) rotate(-7deg)!important}
+.hero-visual .reference-profile .reference-orbit .t5{bottom:10%!important;right:8%!important;left:auto!important;transform:rotate(-7deg)!important}
+.hero-visual .reference-profile .reference-orbit .t6{bottom:1%!important;left:50%!important;right:auto!important;transform:translateX(-50%) rotate(-7deg)!important}
+.hero-visual .reference-profile .reference-orbit .t7{bottom:11%!important;left:9%!important;right:auto!important;transform:rotate(-7deg)!important}
+@media(max-width:700px){
+  .hero-visual .reference-profile{width:min(500px,96vw)!important;height:min(500px,96vw)!important}
+  .hero-visual .reference-profile .reference-photo-frame{width:70%!important;height:70%!important}
+  .hero-visual .reference-profile .reference-orbit .tech{width:82px!important;min-width:82px!important;height:60px!important;min-height:60px!important;padding:5px!important}
+  .hero-visual .reference-profile .reference-orbit .tech i{font-size:15px!important;margin-bottom:3px!important}
+  .hero-visual .reference-profile .reference-orbit .tech b{font-size:7px!important}
+}
