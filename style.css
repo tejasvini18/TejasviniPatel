@@ -327,7 +327,7 @@ body{font-size:15px}
 .cert-card{padding:15px;min-height:365px}
 .cert-card>img{height:178px;object-fit:contain;padding:8px;background:#f8fafc;margin-bottom:12px}
 .cert-source{display:flex;align-items:center;gap:9px;min-height:40px;margin:0 0 10px}
-.cert-source img{width:150px;height:40px;object-fit:contain;object-position:left center;border-radius:8px;background:#0b1220;border:1px solid #ffffff10;padding:3px}
+.cert-source img{width:150px;height:48px;object-fit:contain;object-position:center;border-radius:8px;background:#fff;border:1px solid #ffffff18;padding:4px}
 .cert-source span{font-size:10px;color:#9faabd;line-height:1.35}
 .cert-card h3{font-size:13px;line-height:1.45;margin:0 0 7px}
 .cert-card p{font-size:11px;line-height:1.5;margin:0;color:#b8c2d3}
