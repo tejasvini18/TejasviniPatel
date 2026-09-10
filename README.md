@@ -33,3 +33,6 @@ Shared files:
 - LinkedIn, GitHub and email links
 - Automatic copyright year
 - Responsive mobile navigation
+
+
+Updated refinement pass: larger typography, compact About reference layout, reference-style Skills cards, separated experience skill tags, certificate provider logos, and realistic project image sources.
